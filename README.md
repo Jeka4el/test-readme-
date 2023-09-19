@@ -16,20 +16,18 @@
 
 `Step 1:` Clone this repository.
 
-
 ```
-git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git <br><br><br>
+git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git 
 
 ```
 
 
 `Step 2:` Upload it to your private repo.
 
-Use this link:
+Use this link if you don't know how to do it.
 ```
 https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository 
 ```
-
 
 
 `Step 3:` Create a directory in your home directory that we will mount into the container.
@@ -37,7 +35,7 @@ https://docs.github.com/en/repositories/creating-and-managing-repositories/cloni
 ```
 mkdir -p "$PWD"/backup
 ```
-*Henceforth we will call it the "mounted directory".* <br>
+*Henceforth we will call it the "mounted directory".*
 
 
 `Step 4:` Add the ssh-key that you have created to the "mounted directory", The name has to be id_rsa.
