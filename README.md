@@ -24,7 +24,7 @@ git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git
 
 `Step 2:` Upload it to your private repo.
 
-Use this link if you don't know how to do it.
+*Use this link if you don't know how to do it.*
 ```
 https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository 
 ```
