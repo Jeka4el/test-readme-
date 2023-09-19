@@ -8,8 +8,8 @@
 
 # Useful links:
 
-[Docker](https://github.com/Jeka4el/DevOps-Task0/)  - use this link to see how to install Docker <br>
-[GitHub account](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account) - use this link to see how to cteate GitHub account <br>
+[Docker](https://github.com/Jeka4el/DevOps-Task0/)  - use this link to see how to install Docker. <br>
+[GitHub account](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account) - use this link to see how to cteate GitHub account. <br>
 [Create ssh-key and it](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 [Task](https://absorbed-parrot-e34.notion.site/Task-1-DevOps-1-0-a7520340104248bea0e867b5e3ddfdfa) - use this link to read the task. <br><br><br>
 
