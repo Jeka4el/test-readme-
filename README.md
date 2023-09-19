@@ -65,7 +65,6 @@ docker run -d -u root -v /home/ubuntu/backup:/root/backup backup-script-containe
 
 ```
 ls "$PWD"/backup
-
 ```
 
 ### Congratulations, you did it all.
