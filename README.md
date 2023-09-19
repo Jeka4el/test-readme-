@@ -18,7 +18,7 @@
 
 
 ```
-git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git <br> 
+git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git <br><br><br>
 
 ```
 
@@ -27,7 +27,7 @@ git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git <br>
 
 Use this link:
 ```
-https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository <br><br><br>
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository 
 ```
 
 
