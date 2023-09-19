@@ -32,29 +32,21 @@ https://docs.github.com/en/repositories/creating-and-managing-repositories/cloni
 
 
 <br>
-'Step 3:' Create a directory in your home directory that we will mount into the container.
+`Step 3:` Create a directory in your home directory that we will mount into the container.
 
 ```
 mkdir -p "$PWD"/backup
 ```
-*henceforth we will call it the "mounted directory"* <br> <be>
+*Henceforth we will call it the "mounted directory".* <br>
 
 
-<br>
-'Step 4:' In any case, allow any manipulations with the directory.
+`Step 4:` Add the ssh-key that you have created to the "mounted directory", The name has to be id_rsa.
 ```
-sudo cmod 777 /home/ubuntu/backup
+cp repo_specific_key "$PWD"/backup/id_rsa
 ```
+*Remember repo_specific_key is your key, use this command in the directory where your key is located.* <br>
 
-
-'Step 5:' Add ssh-key that you have created to the "mounted directory", name have to be id_rsa
-```
-cp repo_specific_key /home/ubuntu/backup/id_rsa
-```
-*repo_specific_key is your key, use this comand in the directory where your key is located.* <br><br>
-
-```
-'Step 6:' Build docker image.
+`Step 5:`Build docker image.
 ```
 docker build -t backup-script-container .
 ```
