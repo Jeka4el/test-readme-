@@ -18,11 +18,11 @@
 
 
 ```
-git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git
+git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git <br> 
 
 ```
 
-<br>
+
 `Step 2:` Upload it to your private repo.
 
 Use this link:
