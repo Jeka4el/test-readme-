@@ -1,9 +1,10 @@
 # Description:
-***This instruction consists instructions for running Dockerfile, you can use it to create backups of your repository.*** <br>  <br>
+***This instruction consists of instructions for running Dockerfile, you can use it to create backups of your repository.*** <br>  <br>
 
 # Requirements:
 ***This instruction assumes that you have Docker installed. <br>
    Have GitHub account. <br>
+   Use Linux-based OS. <br>
    Have created ssh-key and input it to GitHub.<br><br><br>***
 
 # Useful links:
