@@ -17,7 +17,7 @@
 `Step 1:` Clone this repository.
 
 ```
-git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git  <br>
+git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git 
 
 ```
 
@@ -67,3 +67,5 @@ docker run -d -u root -v /home/ubuntu/backup:/root/backup backup-script-containe
 ls "$PWD"/backup
 
 ```
+
+### Congratulations, you did it all.
