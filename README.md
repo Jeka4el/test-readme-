@@ -60,8 +60,8 @@ docker run -d -u root -v /home/ubuntu/backup:/root/backup backup-script-containe
 ```
 
 
-'Step 5:' Check the results
-*where /home/ubuntu/backup is a dir when you want to see backups.* <br><br>
+`Step 7:` Check the results
+*where /home/ubuntu/backup is a dir when you want to see backups.*
 
 ```
 ls "$PWD"/backup
