@@ -21,7 +21,7 @@
 git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git
 
 ```
-<br>
+
 
 `Step 2:` Upload it to your private repo.
 
@@ -30,15 +30,17 @@ Use this link:
 https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 ```
 
+
+<br>
 'Step 3:' Create a directory in your home directory that we will mount into the container.
 
 ```
-mkdir /home/ubuntu/backup
+mkdir -p "$PWD"/backup
 ```
-*henceforth we will call it the "mounted directory"* <br> <br>
+*henceforth we will call it the "mounted directory"* <br> <be>
 
 
-
+<br>
 'Step 4:' In any case, allow any manipulations with the directory.
 ```
 sudo cmod 777 /home/ubuntu/backup
