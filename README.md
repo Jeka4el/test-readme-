@@ -27,11 +27,11 @@ git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git <br>
 
 Use this link:
 ```
-https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository <br><br><br>
 ```
 
 
-<br>
+
 `Step 3:` Create a directory in your home directory that we will mount into the container.
 
 ```
