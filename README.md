@@ -4,7 +4,7 @@
 # Requirements:
 ***This instruction assumes that you have Docker installed. <br>
    Have GitHub account. <br>
-   Have created ssh-key and input to GitHub.<br><br><br>***
+   Have created ssh-key and input it to GitHub.<br><br><br>***
 
 # Useful links:
 
