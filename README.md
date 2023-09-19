@@ -42,7 +42,7 @@ mkdir -p "$PWD"/backup
 ```
 cp repo_specific_key "$PWD"/backup/id_rsa
 ```
-*Remember repo_specific_key is your key, use this command in the directory where your key is located.* <br>
+*Remember repo_specific_key is your ssh-key, use this command in the directory where your key is located.*
 
 `Step 5:`Build docker image.
 ```
