@@ -1,5 +1,5 @@
 # Description:
-***This instruction consists instructions for running Dockerfile, you can use it to create backups of your repository*** <br>  <br>
+***This instruction consists instructions for running Dockerfile, you can use it to create backups of your repository.*** <br>  <br>
 
 # Requirements:
 ***This instruction assumes that you have Docker installed. <br>
@@ -22,7 +22,7 @@ git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git
 
 ```
 
-'Step 2:' Upload it to your private repo.
+`Step 2:` Upload it to your private repo.
 
 Use this link:
 ```
