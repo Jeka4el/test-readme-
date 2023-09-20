@@ -16,7 +16,7 @@
 [Task](https://absorbed-parrot-e34.notion.site/Task-1-DevOps-1-0-a7520340104248bea0e867b5e3ddfdfa) - use this link to read the task. <br><br><br>
 
 
-`Step 1:` Clone this repository.
+`Step 1:` **Clone this repository.**
 
 ```
 git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git 
@@ -24,7 +24,7 @@ git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git
 ```
 
 
-`Step 2:` Upload it to your private repo.
+`Step 2:` **Upload it to your private repo.**
 
 *Use this link if you don't know how to do it.*
 ```
@@ -32,7 +32,7 @@ https://docs.github.com/en/repositories/creating-and-managing-repositories/cloni
 ```
 
 
-`Step 3:` Create a directory in your home directory that we will mount into the container.
+`Step 3:` **Create a directory in your home directory that we will mount into the container.**
 
 ```
 mkdir -p "$PWD"/backup
@@ -40,7 +40,7 @@ mkdir -p "$PWD"/backup
 *Henceforth we will call it the "mounted directory".*
 
 
-`Step 4:` Add the ssh-key that you have created to the "mounted directory", The name has to be id_rsa.
+`Step 4:` **Add the ssh-key that you have created to the "mounted directory", The name has to be id_rsa.**
 ```
 cp ~/.ssh/repo_specific_key "$PWD"/backup/id_rsa
 ```
