@@ -93,6 +93,6 @@ ls "$PWD"/backup
 **P.S. You can use --max-backups to set a maximum number of backups that will be stored, using --max-backups - key in your command.**  <br>
 *Sample command:*
 ```
-docker run -d -v "$PWD"/backup:/root/backup backup-script-container /usr/local/bin/script.sh --max-backups=1
+docker run -v "$PWD"/backup:/root/backup backup-script-container /usr/local/bin/script.sh --max-backups=1
 ```
 
