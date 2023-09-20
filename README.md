@@ -5,7 +5,8 @@
 ***This instruction assumes that you have Docker installed. <br>
    Have GitHub account. <br>
    Use Linux-based OS. <br>
-   Have created ssh-key and input it to GitHub.<br><br><br>***
+   Have created ssh-key and input it to GitHub.<br>
+   You have to run all commands in your working directory<br><br><br>***
 
 # Useful links:
 
@@ -41,9 +42,9 @@ mkdir -p "$PWD"/backup
 
 `Step 4:` Add the ssh-key that you have created to the "mounted directory", The name has to be id_rsa.
 ```
-cp repo_specific_key "$PWD"/backup/id_rsa
+cp ~/.ssh/repo_specific_key "$PWD"/backup/id_rsa
 ```
-*Remember repo_specific_key is your ssh-key, use this command in the directory where your key is located.*
+*Remember repo_specific_key is **your ssh-key**, and **~/.ssh/** is the  directory where your key is located.*
 
 
 
