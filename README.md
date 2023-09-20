@@ -19,7 +19,7 @@
 `Step 1:` **Clone this repository.**
 
 ```
-cd && git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git 
+cd && git clone git@github.com:Jeka4el/devops_intern_Jeka4el.git
 
 ```
 
