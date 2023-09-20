@@ -48,17 +48,17 @@ cp ~/.ssh/repo_specific_key "$PWD"/backup/id_rsa
 
 
 
-`Step 5:` Build a docker image.
+`Step 5:` **Build a docker image.**
 ```
 docker build -t backup-script-container .
 ```
-*Please use this command in the repository directory, that you have cloned.*
+*Please use this command in the **repository directory**, that you have cloned.*
 
 
 
-`Step 6:` Run your container
+`Step 6:` **Run your container**
 ```
-docker run -d -u root -v /home/ubuntu/backup:/root/backup backup-script-container
+docker run -v /home/ubuntu/backup:/root/backup backup-script-container
 ```
 
 
