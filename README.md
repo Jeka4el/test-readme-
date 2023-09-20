@@ -19,20 +19,29 @@
 `Step 1:` **Clone this repository.**
 
 ```
-git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git 
+cd && git clone https://github.com/Jeka4el/devops_intern_Jeka4el.git 
 
 ```
 
 
 `Step 2:` **Upload it to your private repo.**
-
+```
+cd devops_intern_Jeka4el
+```
 *Use this link if you don't know how to do it.*
 ```
 https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository 
 ```
 
 
-`Step 3:` **Create a directory in your home directory that we will mount into the container.**
+`Step 3:` **Go to your home directory**
+
+```
+cd
+```
+
+
+`Step 4:` **Create a directory in your home directory that we will mount into the container.**
 
 ```
 mkdir -p "$PWD"/backup
@@ -40,15 +49,21 @@ mkdir -p "$PWD"/backup
 *Henceforth we will call it the "mounted directory".*
 
 
-`Step 4:` **Add the ssh-key that you have created to the "mounted directory", The name has to be id_rsa.**
+`Step 5:` **Add the ssh-key that you have created to the "mounted directory", The name has to be id_rsa.**
 ```
 cp ~/.ssh/repo_specific_key "$PWD"/backup/id_rsa
 ```
 *Remember repo_specific_key is **your ssh-key**, and **~/.ssh/** is the  directory where your key is located.*
 
 
+`Step 6:` **Go to the repository directory, that you have cloned**
 
-`Step 5:` **Build a docker image.**
+```
+cd devops_intern_Jeka4el
+```
+
+
+`Step 7:` **Build a docker image.**
 ```
 docker build -t backup-script-container .
 ```
@@ -56,14 +71,19 @@ docker build -t backup-script-container .
 
 
 
-`Step 6:` **Run your container**
+`Step 8:` **Go to your home directory**
+
 ```
-docker run -v /home/ubuntu/backup:/root/backup backup-script-container
+cd
+```
+
+`Step 9:` **Run your container**
+```
+docker run -v "$PWD"/backup:/root/backup backup-script-container
 ```
 
 
-`Step 7:` Check the results
-*where /home/ubuntu/backup is a dir when you want to see backups.*
+`Step 10:` Check the results
 
 ```
 ls "$PWD"/backup
