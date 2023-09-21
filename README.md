@@ -90,10 +90,10 @@ ls "$PWD"/backup
 ```
 
 ### Congratulations, you did it all. <br>
-**P.S. You can use --max-backups to set a maximum number of backups that will be stored, using --max-backups - key in your command.**  <br>
+**P.S. By default this script makes ten backups and deletes old backups, you can use --max-backups to set a maximum number of backups that will be stored, using --max-backups - key in your command.**  <br>
 *Sample command:*
 ```
 docker run -v "$PWD"/backup:/root/backup backup-script-container script.sh --max-backups=1
 ```
-*--max-backups=0 will delete all buckups*.
+*--max-backups=0 will delete all backups*.
 
