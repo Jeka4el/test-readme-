@@ -95,5 +95,5 @@ ls "$PWD"/backup
 ```
 docker run -v "$PWD"/backup:/root/backup backup-script-container script.sh --max-backups=1
 ```
-*--max-backups=0 will delete all buckups* 
+*--max-backups=0 will delete all buckups*.
 
