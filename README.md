@@ -5,8 +5,7 @@
 ***This instruction assumes that you have Docker installed. <br>
    Have GitHub account. <br>
    Use Linux-based OS. <br>
-   Have created ssh-key and input it to GitHub.<br>
-   You have to run all commands in your working directory<br><br><br>***
+   Have created ssh-key and input it to GitHub.<br><br><br>***
 
 # Useful links:
 
@@ -72,7 +71,7 @@ cd
 
 `Step 8:` **Run your container**
 ```
-docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/repo_specific_key:/root/backup/id_rsa backup-script-container
+docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/<repo_specific_key>:/root/backup/id_rsa backup-script-container
 ```
 *Where "$PWD"/.ssh/ is the pass to your ssh-key and repo_specific_key is the name of ssh-key.*
 
