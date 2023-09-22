@@ -49,21 +49,14 @@ mkdir -p "$PWD"/backup
 *Henceforth we will call it the "mounted directory".*
 
 
-`Step 5:` **Add the ssh-key that you have created to the "mounted directory", The name has to be id_rsa.**
-```
-cp ~/.ssh/repo_specific_key "$PWD"/backup/id_rsa
-```
-*Remember repo_specific_key is **your ssh-key**, and **~/.ssh/** is the  directory where your key is located.*
-
-
-`Step 6:` **Go to the repository directory, that you have cloned**
+`Step 5:` **Go to the repository directory, that you have cloned**
 
 ```
 cd devops_intern_Jeka4el
 ```
 
 
-`Step 7:` **Build a docker image.**
+`Step 6:` **Build a docker image.**
 ```
 docker build -t backup-script-container .
 ```
@@ -71,17 +64,17 @@ docker build -t backup-script-container .
 
 
 
-`Step 8:` **Go to your home directory**
+`Step 7:` **Go to your home directory**
 
 ```
 cd
 ```
 
-`Step 9:` **Run your container**
+`Step 8:` **Run your container**
 ```
-docker run -v "$PWD"/backup:/root/backup backup-script-container
+docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/repo_specific_key:/root/backup/id_rsa backup-script-container
 ```
-
+*Where "$PWD"/.ssh/ is the pass to your ssh-key and repo_specific_key is the name of ssh-key.*
 
 `Step 10:` Check the results
 
@@ -93,7 +86,7 @@ ls "$PWD"/backup
 **P.S. By default this script makes ten backups and deletes old backups, you can use --max-backups to set a maximum number of backups that will be stored, using --max-backups - key in your command.**  <br>
 *Sample command:*
 ```
-docker run -v "$PWD"/backup:/root/backup backup-script-container script.sh --max-backups=1
+docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/repo_specific_key:/root/backup/id_rsa backup-script-container --max-backups=1
 ```
 *--max-backups=0 will delete all backups*.
 
