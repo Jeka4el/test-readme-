@@ -33,29 +33,7 @@ https://docs.github.com/en/repositories/creating-and-managing-repositories/cloni
 ```
 
 
-`Step 3:` **Go to your home directory**
-
-```
-cd ~
-```
-
-
-`Step 4:` **Create a directory in your home directory that we will mount into the container.**
-
-```
-mkdir -p "$PWD"/backup
-```
-*Henceforth we will call it the "mounted directory".*
-
-
-`Step 5:` **Go to the repository directory, that you have cloned**
-
-```
-cd devops_intern_Jeka4el
-```
-
-
-`Step 6:` **Build a docker image.**
+`Step 3:` **Build a docker image.**
 ```
 docker build -t backup-script-container .
 ```
@@ -63,19 +41,19 @@ docker build -t backup-script-container .
 
 
 
-`Step 7:` **Go to your home directory**
+`Step 4:` **Go to your home directory**
 
 ```
 cd ~
 ```
 
-`Step 8:` **Run your container**
+`Step 5:` **Run your container**
 ```
 docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/<repo_specific_key>:/root/backup/id_rsa backup-script-container
 ```
 *Where "$PWD"/.ssh/ is the pass to your ssh-key and repo_specific_key is the name of ssh-key.*
 
-`Step 10:` Check the results
+`Step 6:` Check the results
 
 ```
 ls "$PWD"/backup
