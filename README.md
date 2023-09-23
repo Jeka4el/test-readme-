@@ -49,7 +49,7 @@ cd ~
 
 `Step 5:` **Run your container**
 ```
-docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/<repo_specific_key>:/root/backup/id_rsa backup-script-container
+docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/<repo_specific_key>:/root/.ssh/id_rsa backup-script-container
 ```
 *Where "$PWD"/.ssh/ is the pass to your ssh-key and repo_specific_key is the name of ssh-key.*
 
@@ -60,10 +60,12 @@ ls "$PWD"/backup
 ```
 
 ### Congratulations, you did it all. <br>
-**P.S. By default this script makes ten backups and deletes old backups, you can use --max-backups to set a maximum number of backups that will be stored, using --max-backups - key in your command.**  <br>
+**P.S. By default this script makes ten backups and deletes old backups, you can use --max-backups to set a maximum number of backups that will be stored, using --max-backups - key in your command.**
+<br>
 *Sample command:*
 ```
-docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/repo_specific_key:/root/backup/id_rsa backup-script-container --max-backups=1
+docker run -v "$PWD"/backup:/root/backup -v "$PWD"/.ssh/repo_specific_key:/root/.ssh/id_rsa backup-script-container sh -c "chmod 600 /root/.ssh/id_rsa && /usr/bin/script.sh --max-backups=0"
+
 ```
 *--max-backups=0 will delete all backups*.
 
